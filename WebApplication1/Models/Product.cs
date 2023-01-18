@@ -11,7 +11,7 @@ namespace WebApplication1.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public string Category { get; set; }
+        public string Category { get; set; }        
     }
 
     public class CustomContractResolver : DefaultContractResolver
@@ -23,7 +23,6 @@ namespace WebApplication1.Models
             this.PropertyMappings = new Dictionary<string, string>
         {
             {"Id", "ProductId"},
-            {"Id","ProdId" },
             {"Name", "ProductName"},
             {"Description", "ProductDesc"},
             {"Category", "ProductCategory"},
